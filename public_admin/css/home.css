@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ====== 用户详情页 =====*/
+.user-page-box {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.user-page-box h3, .transfer-page h3, .dailyWage-page h3 {
+    font-size: 16px;
+    font-weight: normal;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    position: relative;
+    color: #121212;
+}
+.user-page-box .user-msg {
+    padding: 15px 25px;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+    clear: both;
+}
+.user-page-box .user-msg:nth-child(2) {
+    padding: 0;
+    border-bottom: none;
+}
+.user-page-box .user-msg .user-msg-l {
+    padding-left: 70px;
+    float: left;
+    position: relative;
+}
+.user-msg-hd {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    background-image: url(../images/admin/user_head.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 52px;
+}
+.user-msg .user-name {
+    width: auto;
+    font-size: 16px;
+    line-height: 26px;
+}
+.user-msg .user-name span {
+    padding-right: 10px;
+}
+.user-msg .user-ipt {
+    width: 140px;
+    height: 24px;
+    padding: 0 10px;
+    line-height: 24px;
+    background: #eff0f1;
+    text-align: left;
+    border-radius: 2px;
+    border: 1px solid #eee;
+}
+.user-msg a.username-change {
+    font-size: 12px;
+    background-color: #6da0f5;
+    padding: 3px 5px;
+    line-height: 18px;
+    border-radius: 2px;
+    color: #fff;
+}
+.user-msg a.username-change:hover {
+    background-color: #93BBE4;
+}
+.user-msg a.username-change:active {
+    background: #618db8;
+}
+.ico-grade {
+    color: #ffaa0e;
+    border: 1px #ffaa0e solid;
+}
+.ico-point {
+    color: #96bbf8;
+    border: 1px #96bbf8 solid;
+}
+.user-msg-time {
+    float: right;
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+    line-height: 26px;
+}
+.user-msg-time span {
+    margin: 0 5px;
+}
+/*公告*/
+.user-bulletin-list, .user-team-msg, .user-msg-safety {
+
+    padding: 15px 20px 25px 30px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+.user-bulletin-list {
+    width: 400px;
+}
+.user-bulletin-list ul {
+    padding-left: 5px;
+    height: 70px;
+    overflow: hidden;
+}
+.user-bulletin-list li {
+    font-size: 12px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*团队信息*/
+.user-team-msg {
+    width: 400px;
+}
+.user-team-msg h3 .team-size {
+    text-align: right;
+    color: #888;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.user-team-msg h3 strong {
+    padding: 0 10px 0 2px;
+    color: #6da0f5;
+    font-weight: normal;
+}
+.user-team-msg li {
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+}
+.user-team-msg li strong, .user-assets li strong, .user-game-account strong, .user-statistics strong, .transfer-money-account li strong {
+    margin-left: 10px;
+    color: #ff5237;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: "sans-serif";
+}
+/*账号安全操作*/
+.user-msg-safety {
+    border: none;
+}
+.user-msg-card, .user-msg-pw, .user-msg-email {
+    min-width: 80px;
+    padding: 2px 55px 0 35px;
+    line-height: 38px;
+    position: relative;
+}
+.user-msg-safety a {
+    padding: 2px;
+    color: #0a7be6;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*图标*/
+.ico-card {
+    background-position: 0 3px;
+}
+.ico-safe-pw {
+    background-position: 2px -19px;
+}
+.ico-email {
+    background-position: 0 -40px;
+}
+.ico-assets {
+    background-position: 0 -81px;
+}
+.ico-game-account {
+    background-position: 0 -61px;
+}
+.ico-card, .ico-safe-pw, .ico-email, .ico-assets, .ico-game-account, .transfer-refresh, .transfer-ico__a {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/admin/pages_ico_new.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+.ico-card, .ico-safe-pw, .ico-email {
+    top: 10px;
+}
+.ico-assets, .ico-game-account {
+    top: 11px;
+}
+/*总资产*/
+.user-assets {
+    /* height: 170px; */
+    width: 320px;
+    padding: 15px 20px 25px 30px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+.user-assets h3, .user-game-account h3 {
+    padding-left: 30px;
+}
+.user-assets ul {
+    min-height: 90px;
+}
+.user-assets li {
+    font-size: 14px;
+    color: #888;
+    line-height: 32px;
+}
+.user-assets li span {
+    min-width: 120px;
+    display: inline-block;
+}
+.user-assets li .freeze_money {
+    color: #333;
+}
+.user-btn-recharge, .user-btn-withdraw, .user-btn-transfer {
+    height: 46px;
+    padding: 0 5px;
+    line-height: 46px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #0a7be6;
+    text-align: left;
+    display: inline-block;
+}
+/*游戏账号余额*/
+.user-game-account {
+    height: 170px;
+    width: 560px;
+    padding: 15px 20px 25px 30px;
+    float: left;
+}
+.user-game-account ul, .transfer-money-account ul {
+}
+.user-game-account li, .transfer-money-account li {
+    width: 49.5%;
+    font-size: 14px;
+    color: #888;
+    line-height: 32px;
+    display: inline-block;
+}
+.user-game-account li span, .transfer-money-account li span {
+    min-width: 120px;
+    display: inline-block;
+}
+.user-game-account li strong .transfer-money-account li strong {
+    font-size: 14px;
+    margin-left: 5px;
+}
+/*统计*/
+.user-statistics {
+    /* height: 250px; */
+    width: 320px;
+    padding: 15px 20px 25px 30px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+.user-statistics h3 {
+    padding-right: 120px;
+}
+.user-statistics h3 span {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #d8d8d8;
+}
+.user-statistics h3 a.see-more, .user-quota h3 a.see-more, .transfer-page-l h3 a.see-more, .dailyWage-page h3 a.see-more {
+    text-align: right;
+    color: #0a7be6;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.user-statistics ul {
+}
+.user-statistics li {
+    width: 49%;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    color: #888;
+    display: inline-block;
+}
+.user-statistics li p {
+    line-height: 24px;
+}
+.user-statistics li strong {
+    margin-left: 0px;
+}
+.user-statistics li .normal-txt {
+    color: #121212;
+}
+.user-graph {
+    height: 250px;
+    width: 570px;
+    padding: 15px 20px 25px 30px;
+    float: left;
+}
+.user-graph .user-graph__select {
+    width: 150px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    border: 1px solid #cdcdcd;
+    font-size: 12px;
+    color: #666;
+    border-radius: 5px;
+}
+.user-graph-box {
+    width: 570px;
+    height: 200px;
+}
+.user-quota {
+    padding: 15px 20px 25px 30px;
+}
+.user-quota ul {
+    overflow: hidden;
+    clear: both;
+}
+.user-quota li {
+    width: 25%;
+    height: 32px;
+    padding: 10px 0;
+    float: left;
+    display: block;
+}
+.user-quota-list {
+    height: 6px;
+    padding: 20px 40px 0 40px;
+    position: relative;
+}
+.user-quota-list strong {
+    color: #121212;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.user-quota-line {
+    height: 6px;
+    width: 100%;
+    background-color: #eff1f2;
+}
+.user-quota-per {
+    height: 6px;
+    background-color: #7cbbfc;
+}
+.user-quota-list span {
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    font-size: 12px;
+    color: #888;
+}

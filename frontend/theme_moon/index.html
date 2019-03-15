@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>彩票测试</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="./scripts/app.js"></script>
+</head>
+    <div id="app">
+        <h1>中兴</h1>
+        <p>
+            <router-link to="/bet">投注</router-link>
+            <router-link to="/order">订单历史</router-link>
+            <router-link to="/proxy">代理信息</router-link>
+            <router-link to="/report">数据报表</router-link>
+        </p>
+        <router-view></router-view>
+    </div>
+</html>
